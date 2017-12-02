@@ -1,4 +1,5 @@
 # coding=utf-8
+"""列表基本操作"""
 
 
 # 列表的索引
@@ -84,10 +85,14 @@ def test_list_func():
 # 列表排序
 def test_sort():
     nums = [1, 3, 4, 7, 6, 2]
-    nums.sort()     # 排序，改变原列表
-    print(sorted(nums)) # 排序，不改变原列表，返回一个排序后的副本
+    nums.sort()  # 排序，改变原列表
+    print(sorted(nums))  # 排序，不改变原列表，返回一个排序后的副本
     print(nums)
 
     # 自定义比较器排序 cmp参数
     # 反向排序 reverse参数
-test_sort()
+
+
+# 元组是不可变的列表
+t = tuple([1,2,3])
+print(t)
